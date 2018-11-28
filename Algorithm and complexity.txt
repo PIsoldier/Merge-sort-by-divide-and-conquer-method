@@ -1,0 +1,30 @@
+Merge_sort(A, low, high)
+{
+    if low == high
+      return 
+       mid = |_(low + high) / 2 _|
+       Merge_sort(A, low, mid)
+       Merge_sort(A, mid + 1, high)
+       Merge(A, low, mid, high)
+}
+
+Mergre(A, low, mid, high)
+{
+  i = low
+  j = mid + 1
+  k = low
+  temp[]
+  while i <= mid and j <= high
+         if A[i] < A[j]
+         temp[k++] = A[i++]
+         else temp[k++] = A[j++] 
+
+         while i <= mid
+           temp[k++] = A[i++]
+
+         while j <= high
+           temp[k++] = A[j++]
+
+        for i = low to high
+             A[i] = temp[i]
+}
